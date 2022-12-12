@@ -1,3 +1,5 @@
+emoticons: function(locate='div') {
+
 		var emotions = ['&#x0001F923','&#x0001F929','&#x0001F92A','&#x0001F911','&#x0001F917','&#x0001F92D','&#x0001F92B','&#x0001F914','&#x0001F910','&#x0001F928','&#x0001F925','&#x0001F924','&#x0001F912','&#x0001F915','&#x0001F922','&#x0001F92E','&#x0001F927','&#x0001F92F','&#x0001F920','&#x0001F913','&#x0001F92C','&#x0001F921','&#x0001F916','&#x0001F926'];
 		var hearts = ['&#x0001F498','&#x0001F49D','&#x0001F496','&#x0001F497','&#x0001F493','&#x0001F49E','&#x0001F495','&#x0001F49F','&#x0001F494','&#x0001F49B','&#x0001F49A','&#x0001F499','&#x0001F49C','&#x0001F5A4'];
 		var transport = ['&#x0001F6E6','&#x0001F6E8','&#x0001F6EA','&#x0001F6F1','&#x0001F6F2','&#x0001F6A3','&#x0001F682','&#x0001F68A','&#x0001F69D','&#x0001F69E','&#x0001F68B','&#x0001F68E','&#x0001F690','&#x0001F699','&#x0001F6FB','&#x0001F69A','&#x0001F69C','&#x0001F6F5','&#x0001F6FA','&#x0001F6F4','&#x0001F6F9','&#x0001F6FC','&#x0001F68F','&#x0001F6F6','&#x0001F6A4','&#x0001F6F3','&#x0001F6E5','&#x0001F6A2','&#x0001F6E9','&#x0001F6EB','&#x0001F6EC','&#x0001F681','&#x0001F69F','&#x0001F6A1','&#x0001F6F0','&#x0001F680','&#x0001F6F8','&#x0001F6F7'];
@@ -12,7 +14,7 @@
 		var entertainment = ['&#x0001F3A0','&#x0001F3A2','&#x0001F3AA','&#x0001F39F','&#x0001F3AB','&#x0001F3A3','&#x0001F3AD','&#x0001F3A8','&#x0001F3A9','&#x0001F3A4','&#x0001F3A7','&#x0001F3A5','&#x0001F39E','&#x0001F3AC','&#x0001F3A6'];
 		var money = ['&#x0001F4B0','&#x0001F4B4','&#x0001F4B8','&#x0001F4B3','&#x0001F4B9','&#x0001F4B1','&#x0001F4B2'];
 
-		let emojis = [['&#x0001F498','&#x0001F49D','&#x0001F496','&#x0001F497','&#x0001F493','&#x0001F49E','&#x0001F495','&#x0001F49F','&#x0001F494','&#x0001F49B','&#x0001F49A','&#x0001F499','&#x0001F49C','&#x0001F5A4'],
+		let emojies = [['&#x0001F498','&#x0001F49D','&#x0001F496','&#x0001F497','&#x0001F493','&#x0001F49E','&#x0001F495','&#x0001F49F','&#x0001F494','&#x0001F49B','&#x0001F49A','&#x0001F499','&#x0001F49C','&#x0001F5A4'],
 		['&#x0001F600','&#x0001F603','&#x0001F604','&#x0001F601','&#x0001F606','&#x0001F605','&#x0001F602','&#x0001F642','&#x0001F643','&#x0001FAE0','&#x0001F609','&#x0001F60A','&#x0001F607','&#x0001F970','&#x0001F60D','&#x0001F618','&#x0001F617','&#x0001F61A','&#x0001F619','&#x0001F972','&#x0001F60B','&#x0001F61B','&#x0001F61D','&#x0001FAE2','&#x0001FAE3','&#x0001FAE1','&#x0001F610','&#x0001F611','&#x0001F636','&#x0001FAE5','&#x0001F60F','&#x0001F612','&#x0001F644','&#x0001F62C','&#x0001F60C','&#x0001F614','&#x0001F62A','&#x0001F634','&#x0001F637','&#x0001F975','&#x0001F976','&#x0001F974','&#x0001F635','&#x0001F973','&#x0001F978','&#x0001F60E','&#x0001F615','&#x0001FAE4','&#x0001F61F','&#x0001F641','&#x0001F62E','&#x0001F62F','&#x0001F632','&#x0001F633','&#x0001F97A','&#x0001F979','&#x0001F626','&#x0001F628','&#x0001F630','&#x0001F625','&#x0001F622','&#x0001F62D','&#x0001F631','&#x0001F616','&#x0001F623','&#x0001F61E','&#x0001F613','&#x0001F629','&#x0001F62B','&#x0001F971','&#x0001F624','&#x0001F621','&#x0001F620','&#x0001F608','&#x0001F977'],
 		['&#x0001F9CC','&#x0001F9D9','&#x0001F9DA','&#x0001F9DB','&#x0001F9DC','&#x0001F9DD','&#x0001F9DE','&#x0001F9DF'],
 		['&#x0001F47F','&#x0001F480','&#x0001F479','&#x0001F47B','&#x0001F47D','&#x0001F47E','&#x0001F478','&#x0001F47C'],
@@ -27,3 +29,34 @@
 		['&#x0001F9ED','&#x0001F9F1','&#x0001F9F3','&#x0001F9FF','&#x0001F9F8','&#x0001F9F5','&#x0001F9F6','&#x0001F9EE','&#x0001F9FE','&#x0001F9F0','&#x0001F9F2','&#x0001F9EA','&#x0001F9EC','&#x0001F9F4','&#x0001F9F7','&#x0001F9F9','&#x0001F9FD','&#x0001F9EF'],
 		['&#x0001F6E6','&#x0001F6E8','&#x0001F6EA','&#x0001F6F1','&#x0001F6F2','&#x0001F6A3','&#x0001F682','&#x0001F68A','&#x0001F69D','&#x0001F69E','&#x0001F68B','&#x0001F68E','&#x0001F690','&#x0001F699','&#x0001F6FB','&#x0001F69A','&#x0001F69C','&#x0001F6F5','&#x0001F6FA','&#x0001F6F4','&#x0001F6F9','&#x0001F6FC','&#x0001F68F','&#x0001F6F6','&#x0001F6A4','&#x0001F6F3','&#x0001F6E5','&#x0001F6A2','&#x0001F6E9','&#x0001F6EB','&#x0001F6EC','&#x0001F681','&#x0001F69F','&#x0001F6A1','&#x0001F6F0','&#x0001F680','&#x0001F6F8','&#x0001F6F7']
 		];
+
+		try {
+			if(document.getElementById('selector').style.display == 'block') {
+				document.getElementById('selector').style.display = 'none';
+			}
+		} catch(e) {}
+		
+		 const options = document.createElement('div');
+			options.id = 'selector';
+			options.style = 'display:block;cursor:default;';
+			options.addEventListener("click",function(event) {event.currentTarget.style.display = 'none';}, true);
+		
+		for(i = 0; i < emojies.length; i++) {
+			
+			for(k = 0; k < emojies[i].length; k++) {
+				opt = document.createElement('span');
+				opt.className = 'emoji-opt';
+				opt.id = 'emojilist';
+				opt.value = emojies[i][k] + ';';
+				opt.innerHTML = emojies[i][k] + ';';
+				opt.addEventListener("click", function(event) {
+					var post = document.getElementById(locate).value;
+					var emoji = event.currentTarget.innerHTML;
+					document.getElementById(locate).value = post + emoji;
+				}, true);
+				options.appendChild(opt);
+			
+		}		
+		
+	document.getElementById('emoji').appendChild(options);
+}
