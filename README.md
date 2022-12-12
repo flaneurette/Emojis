@@ -6,4 +6,4 @@ UNICODE emojis to HTML entities
 The GNU General Public License.
 
 # Credits
-Credit to stackoverflow for being helpful.
+Credit to Yan King Yin on stackoverflow for being helpful.
