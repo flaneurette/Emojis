@@ -1,4 +1,4 @@
-emoticons: function(locate='div') {
+function emoticons(textarea='post') {
 
 		// https://util.unicode.org/UnicodeJsps/list-unicodeset.jsp?a=%5B%3AEmoji%3DYes%3A%5D&esc=on&g=&i=
 	
@@ -38,11 +38,13 @@ emoticons: function(locate='div') {
 			}
 		} catch(e) {}
 		
+		 const options = document.createElement('emoji');
 		 const options = document.createElement('div');
 			options.id = 'selector';
 			options.style = 'display:block;cursor:default;';
 			options.addEventListener("click",function(event) {event.currentTarget.style.display = 'none';}, true);
 		
+		// create spans and append it to the parent div
 		for(i = 0; i < emojies.length; i++) {
 			
 			for(k = 0; k < emojies[i].length; k++) {
@@ -52,9 +54,9 @@ emoticons: function(locate='div') {
 				opt.value = emojies[i][k] + ';';
 				opt.innerHTML = emojies[i][k] + ';';
 				opt.addEventListener("click", function(event) {
-					var post = document.getElementById(locate).value;
+					var post = document.getElementById(textarea).value;
 					var emoji = event.currentTarget.innerHTML;
-					document.getElementById(locate).value = post + emoji;
+					document.getElementById(textarea).value = post + emoji;
 				}, true);
 				options.appendChild(opt);
 			
