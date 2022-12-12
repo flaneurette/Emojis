@@ -66,7 +66,7 @@ function emoticons(textareaId='post') {
 					document.getElementById(textareaId).value = post + emoji;
 				}, true);
 				options.appendChild(opt);
-			
+			}
 		}		
 		
 	document.getElementById('emoji').appendChild(options);
