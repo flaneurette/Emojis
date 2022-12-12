@@ -47,6 +47,7 @@ function emoticons(textarea='post') {
 		 const options = document.createElement('div');
 			options.id = 'selector';
 			options.style = 'display:block;cursor:default;';
+			// thanks to stackoverflow: you can use event.currentTarget to find the current id.
 			options.addEventListener("click",function(event) {event.currentTarget.style.display = 'none';}, true);
 		
 		// create spans and append it to the parent div selector
