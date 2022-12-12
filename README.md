@@ -1,6 +1,6 @@
 # Emojis
 
-UNICODE emojis to HTML entities
+UNICODE emojis to HTML entities, and a testcase with a emoji picker.
 
 # License
 The GNU General Public License.
