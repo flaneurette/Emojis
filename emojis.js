@@ -47,7 +47,6 @@ function emoticons(textareaId='post') {
 		 const options = document.createElement('div');
 			options.id = 'selector';
 			options.style = 'display:block;cursor:default;';
-			// thanks to stackoverflow: you can use event.currentTarget to find the current id.
 			// https://stackoverflow.com/questions/1338599/the-value-of-this-within-the-handler-using-addeventlistener
 			options.addEventListener("click",function(event) {event.currentTarget.style.display = 'none';}, true);
 		
