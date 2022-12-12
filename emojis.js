@@ -1,4 +1,4 @@
-function emoticons(textarea='post') {
+function emoticons(textareaId='post') {
 
 		// https://util.unicode.org/UnicodeJsps/list-unicodeset.jsp?a=%5B%3AEmoji%3DYes%3A%5D&esc=on&g=&i=
 		// a selective list of common emojis, see reference above to locate others.
@@ -60,9 +60,9 @@ function emoticons(textarea='post') {
 				opt.value = emojies[i][k] + ';';
 				opt.innerHTML = emojies[i][k] + ';';
 				opt.addEventListener("click", function(event) {
-					var post = document.getElementById(textarea).value;
+					var post = document.getElementById(textareaId).value;
 					var emoji = event.currentTarget.innerHTML;
-					document.getElementById(textarea).value = post + emoji;
+					document.getElementById(textareaId).value = post + emoji;
 				}, true);
 				options.appendChild(opt);
 			
