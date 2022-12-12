@@ -32,19 +32,22 @@ function emoticons(textarea='post') {
 		['&#x0001F6E6','&#x0001F6E8','&#x0001F6EA','&#x0001F6F1','&#x0001F6F2','&#x0001F6A3','&#x0001F682','&#x0001F68A','&#x0001F69D','&#x0001F69E','&#x0001F68B','&#x0001F68E','&#x0001F690','&#x0001F699','&#x0001F6FB','&#x0001F69A','&#x0001F69C','&#x0001F6F5','&#x0001F6FA','&#x0001F6F4','&#x0001F6F9','&#x0001F6FC','&#x0001F68F','&#x0001F6F6','&#x0001F6A4','&#x0001F6F3','&#x0001F6E5','&#x0001F6A2','&#x0001F6E9','&#x0001F6EB','&#x0001F6EC','&#x0001F681','&#x0001F69F','&#x0001F6A1','&#x0001F6F0','&#x0001F680','&#x0001F6F8','&#x0001F6F7']
 		];
 
+		 // parent div emoji
+		const  div = document.createElement('div');
+		       div.id = 'emoji';
 		try {
 			if(document.getElementById('selector').style.display == 'block') {
 				document.getElementById('selector').style.display = 'none';
 			}
 		} catch(e) {}
-		
-		 const options = document.createElement('emoji');
+	
+		 // parent div selector
 		 const options = document.createElement('div');
 			options.id = 'selector';
 			options.style = 'display:block;cursor:default;';
 			options.addEventListener("click",function(event) {event.currentTarget.style.display = 'none';}, true);
 		
-		// create spans and append it to the parent div
+		// create spans and append it to the parent div selector
 		for(i = 0; i < emojies.length; i++) {
 			
 			for(k = 0; k < emojies[i].length; k++) {
