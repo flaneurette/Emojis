@@ -1,6 +1,6 @@
 # Emojis
 
-UNICODE emojis to HTML entities, and a testcase with a emoji picker written in JavaScript.
+UNICODE emojis to HTML entities, and a testcase with a emoji picker written in JavaScript. It shows a selective list of common emojis, for additional emojis, see reference [2].
 
 # Example
 A testcase is presented: test.html
@@ -26,5 +26,5 @@ The GNU General Public License.
 
 # Credits
 Flaneurette, and additional credit to Jacopo Stefanuto and Yan King Yin on stackoverflow for being helpful.
-1. https://stackoverflow.com/questions/1338599/the-value-of-this-within-the-handler-using-addeventlistener
-2. https://util.unicode.org/UnicodeJsps/list-unicodeset.jsp?a=%5B%3AEmoji%3DYes%3A%5D&esc=on&g=&i=
+[1]. https://stackoverflow.com/questions/1338599/the-value-of-this-within-the-handler-using-addeventlistener
+[2]. https://util.unicode.org/UnicodeJsps/list-unicodeset.jsp?a=%5B%3AEmoji%3DYes%3A%5D&esc=on&g=&i=
