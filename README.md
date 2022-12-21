@@ -17,7 +17,7 @@ mysqli_set_charset($mysqli, 'utf8mb4');
 # Output
 To show the emojis in PHP:
 
-```utf8_decode($emojies);```
+```utf8_decode($emojis);```
 # License
 The GNU General Public License.
 
