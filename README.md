@@ -5,6 +5,8 @@ Emojis is a Emoji picker written in JavaScript. It converts UNICODE emojis to HT
 # Example
 A testcase is presented: test.html
 
+<img src="example.png" />
+
 # Storage
 It is possible to store the emoticons inside a (MySQL) database. In order to do this, the character set must be set to utf8mb4 on the database (and tables) as well as the database connection, plus the HTML header should be set to Utf8. To store the emojis with PHP MySQLi:
 
