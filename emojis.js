@@ -1,11 +1,11 @@
 class emojis {
 	
-   createEmojis(input, list) {
+    createEmojis(input, list) {
 		
-		this.aim  = input;
-		this.list = list;
-		this.isVisible();
-		
+        this.aim = input;
+        this.list = list;
+        this.isVisible();
+
         const options = document.createElement("div");
 
         options.id = "selector";
@@ -17,25 +17,25 @@ class emojis {
             },
             true
         );
-		
-		this.createSpans(this.aim,options,this.list);
-		
+
+        this.createSpans(this.aim, options, this.list);
+
         document.getElementById("emoji").appendChild(options);
     }
-	
-	createSpans(aim,options,list) {
-		
-		if(!Array.isArray(list)) {
-			return false;
-		}
-		
+
+    createSpans(aim, options, list) {
+	    
+        if (!Array.isArray(list)) {
+            return false;
+        }
+
         // Create spans and append it to the parent div selector
         for (var i = 0; i < list.length; i++) {
-			
+		
             if (Array.isArray(list[i])) {
-				
+		    
                 for (var k = 0; k < list[i].length; k++) {
-					
+			
                     var opt = document.createElement("span");
                     opt.className = "emoji-option";
                     opt.innerHTML = "&#x" + list[i][k] + ";";
@@ -50,9 +50,9 @@ class emojis {
                     );
                     options.appendChild(opt);
                 }
-				
+		    
             } else {
-				
+		    
                 opt = document.createElement("span");
                 opt.className = "emoji-opt";
                 opt.innerHTML = "&#x" + list[i] + ";";
@@ -68,13 +68,14 @@ class emojis {
                 options.appendChild(opt);
             }
         }
-	}
-	
-	isVisible() {
-		 try {
+    }
+
+    isVisible() {
+	    
+        try {
             if (document.getElementById("selector").style.display == "block") {
                 document.getElementById("selector").style.display = "none";
             }
         } catch (e) {}
-	}
-};
+    }
+}
