@@ -1,0 +1,54 @@
+		* {
+			padding:10px;
+			font-family: "Segoe UI", Roboto, Arial;
+		}
+		#navigation {
+			clear:both;
+		}
+		#selector {
+			display:none;
+			cursor:default;
+			position: absolute;
+			top: 80px;
+			z-index: 2;
+			float: left;
+			background-color: #fff;
+			overflow-y: scroll;
+			width: 456px;
+			height: 200px;
+			padding: 30px;
+			border: 1px solid #ddd;
+			margin-left: -10px;
+			font-size: 28px;
+			
+		}
+		.emoji-option {
+			padding:3px; !important;
+			font-size: 28px;
+		}
+		#button {
+			clear: both;
+			float: left;
+			margin-top: 10px;
+			margin-left:15px;
+		}
+
+		.emoji-item {
+			float:left;
+			padding: 10px;
+			margin-left:0px;
+			border: 1px solid #ddd;
+			background-color: #ddd;
+			border-radius:5px;
+			margin:5px;
+			cursor: default;
+			font-size: 12px;
+			text-transform:uppercase;
+		}
+		textarea {
+			float:left;
+			margin-left:15px;
+			border: 1px solid #ddd;
+			font-size: 16px;
+		}
+	
