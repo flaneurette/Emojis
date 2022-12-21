@@ -1,9 +1,6 @@
 var Emojis = {
 	
     emoticons: function (textareaId,emojiesList) {
-		
-        // parent div emoji
-        const div = document.createElement("div");
        
         try {
             if (document.getElementById("selector").style.display == "block") {
@@ -11,7 +8,6 @@ var Emojis = {
             }
         } catch (e) {}
 
-        // parent div selector
         const options = document.createElement("div");
 		
         options.id = "selector";
