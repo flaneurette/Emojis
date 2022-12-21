@@ -1,6 +1,6 @@
 # Emojis
 
-UNICODE emojis to HTML entities, and a testcase with a emoji picker written in JavaScript. It shows a selective list of common emojis, for additional emojis, see reference [2].
+UNICODE emojis to HTML entities, and a testcase with a emoji picker written in JavaScript. It shows a selective list of common emojis. For additional emojis, see reference [2].
 
 # Example
 A testcase is presented: test.html
