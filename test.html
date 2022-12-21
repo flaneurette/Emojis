@@ -4,35 +4,75 @@
 		<style>
 		* {
 			padding:10px;
-			
+			font-family: "Segou UI", Roboto, Arial;
+		}
+		#navigation {
+			clear:both;
 		}
 		#selector {
 			display:none;
 			cursor:default;
-			position: sticky;
+			position: absolute;
+			top: 80px;
 			z-index: 2;
 			float: left;
 			background-color: #fff;
 			overflow-y: scroll;
 			width: 456px;
 			height: 200px;
-			padding: 10px;
-			border: 1px solid #444;
+			padding: 30px;
+			border: 1px solid #ddd;
 			margin-left: -10px;
-			font-size: 18px;
+			font-size: 28px;
+			
 		}
 		.emoji-option {
 			padding:3px; !important;
-			font-size: 18px;
+			font-size: 28px;
 		}
 		#button {
 			clear: both;
 			float: left;
 			margin-top: 10px;
+			margin-left:15px;
 		}
+
+		.emoji-item {
+			float:left;
+			padding: 10px;
+			margin-left:0px;
+			border: 1px solid #ddd;
+			background-color: #ddd;
+			border-radius:5px;
+			margin:5px;
+			cursor: default;
+			font-size: 12px;
+			text-transform:uppercase;
+		}
+		textarea {
+			float:left;
+			margin-left:15px;
+		}
+	
 		</style>
 	</head>
 <body>
+
+	<div id="navigation">
+		<!-- a selective list -->
+		<div class="emoji-item" onclick="var list = new emojis(); list.createEmojis('post',allemojis);">All</div>
+		<div class="emoji-item" onclick="var list = new emojis(); list.createEmojis('post',emotions);">Emotions</div>
+		<div class="emoji-item" onclick="var list = new emojis(); list.createEmojis('post',hearts);">Hearts</div>
+		<div class="emoji-item" onclick="var list = new emojis(); list.createEmojis('post',transport);">Transport</div>
+		<div class="emoji-item" onclick="var list = new emojis(); list.createEmojis('post',handsymbols);">Hands</div>
+		<div class="emoji-item" onclick="var list = new emojis(); list.createEmojis('post',foods);">Foods</div>
+		<div class="emoji-item" onclick="var list = new emojis(); list.createEmojis('post',faces);">Faces</div>
+		<div class="emoji-item" onclick="var list = new emojis(); list.createEmojis('post',animals);">Animals</div>
+		<div class="emoji-item" onclick="var list = new emojis(); list.createEmojis('post',objects);">Objects</div>
+		<div class="emoji-item" onclick="var list = new emojis(); list.createEmojis('post',music);">Music</div>
+		<div class="emoji-item" onclick="var list = new emojis(); list.createEmojis('post',entertainment);">Entertainment</div>
+		<div class="emoji-item" onclick="var list = new emojis(); list.createEmojis('post',money);">Money</div>		
+	</div>
 
 	<textarea id="post" cols="60" rows="10"></textarea>
 
