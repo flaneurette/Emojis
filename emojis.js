@@ -1,18 +1,15 @@
-var Emojis = {
+class emojis {
 	
-    emoticons: function (textareaId, emojiList) {
+   createEmojis(input, list) {
 		
-        try {
-            if (document.getElementById("selector").style.display == "block") {
-                document.getElementById("selector").style.display = "none";
-            }
-        } catch (e) {}
-
+		this.aim  = input;
+		this.list = list;
+		this.isVisible();
+		
         const options = document.createElement("div");
 
         options.id = "selector";
-        options.style = "display:block;";
-
+        options.style.display = "block";
         options.addEventListener(
             "click",
             function (event) {
@@ -20,23 +17,34 @@ var Emojis = {
             },
             true
         );
-
-        // create spans and append it to the parent div selector
-        for (i = 0; i < emojiList.length; i++) {
+		
+		this.createSpans(this.aim,options,this.list);
+		
+        document.getElementById("emoji").appendChild(options);
+    }
+	
+	createSpans(aim,options,list) {
+		
+		if(!Array.isArray(list)) {
+			return false;
+		}
+		
+        // Create spans and append it to the parent div selector
+        for (var i = 0; i < list.length; i++) {
 			
-            if (Array.isArray(emojiList[i])) {
+            if (Array.isArray(list[i])) {
 				
-                for (k = 0; k < emojiList[i].length; k++) {
+                for (var k = 0; k < list[i].length; k++) {
 					
-                    opt = document.createElement("span");
-                    opt.className = "emoji-opt";
-                    opt.innerHTML = "&#x" + emojiList[i][k] + ";";
+                    var opt = document.createElement("span");
+                    opt.className = "emoji-option";
+                    opt.innerHTML = "&#x" + list[i][k] + ";";
                     opt.addEventListener(
                         "click",
                         function (event) {
-                            var post = document.getElementById(textareaId).value;
+                            var post = document.getElementById(aim).value;
                             var emoji = event.currentTarget.innerHTML;
-                            document.getElementById(textareaId).value = post + emoji;
+                            document.getElementById(aim).value = post + emoji;
                         },
                         true
                     );
@@ -47,20 +55,26 @@ var Emojis = {
 				
                 opt = document.createElement("span");
                 opt.className = "emoji-opt";
-                opt.innerHTML = "&#x" + emojiList[i] + ";";
+                opt.innerHTML = "&#x" + list[i] + ";";
                 opt.addEventListener(
                     "click",
                     function (event) {
-                        var post = document.getElementById(textareaId).value;
+                        var post = document.getElementById(aim).value;
                         var emoji = event.currentTarget.innerHTML;
-                        document.getElementById(textareaId).value = post + emoji;
+                        document.getElementById(aim).value = post + emoji;
                     },
                     true
                 );
                 options.appendChild(opt);
             }
         }
-
-        document.getElementById("emoji").appendChild(options);
-    }
+	}
+	
+	isVisible() {
+		 try {
+            if (document.getElementById("selector").style.display == "block") {
+                document.getElementById("selector").style.display = "none";
+            }
+        } catch (e) {}
+	}
 };
