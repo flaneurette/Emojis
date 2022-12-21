@@ -4,8 +4,7 @@ var Emojis = {
 		
         // parent div emoji
         const div = document.createElement("div");
-        div.id = "emoji";
-		
+       
         try {
             if (document.getElementById("selector").style.display == "block") {
                 document.getElementById("selector").style.display = "none";
