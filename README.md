@@ -27,3 +27,4 @@ The GNU General Public License.
 # Credits
 Flaneurette, and additional credit to Jacopo Stefanuto and Yan King Yin on stackoverflow for being helpful.
 1. https://stackoverflow.com/questions/1338599/the-value-of-this-within-the-handler-using-addeventlistener
+2. https://util.unicode.org/UnicodeJsps/list-unicodeset.jsp?a=%5B%3AEmoji%3DYes%3A%5D&esc=on&g=&i=
