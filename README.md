@@ -1,10 +1,9 @@
 # Emojis
 
-UNICODE emojis to HTML entities, and a testcase with a emoji picker written in JavaScript. It shows a selective list of common emojis. For additional emojis, see reference [2].
+Emojis is a Emoji picker written in JavaScript. It converts UNICODE emojis to HTML entities. It produces a selective list of commonly used emojis. For additional emojis, see reference [2].
 
 # Example
 A testcase is presented: test.html
-
 
 # Storage
 It is possible to store the emoticons inside a (MySQL) database. In order to do this, the character set must be set to utf8mb4 on the database (and tables) as well as the database connection, plus the HTML header should be set to Utf8. To store the emotions with PHP:
@@ -15,12 +14,10 @@ $mysqli->set_charset("utf8mb4");
 // or:
 mysqli_set_charset($mysqli, 'utf8mb4');
 ```
-
 # Output
 To show the emoticons in PHP:
 
 ```utf8_decode($emojies);```
-
 # License
 The GNU General Public License.
 
